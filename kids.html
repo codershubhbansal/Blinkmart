@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <title>Project</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.jpeg">
+</head>
+
+<body style="background-color: antiquewhite;">
+  <div class="arrow-btn">
+    <a href="#"><span class="far fa-angle-up">^</span></a>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div id="nav-logo">
+        <aclass="navbar-brand" href="#"><img width="120" height="70" src="/logo.jpeg" alt="Blinkmart"
+            title="Blinkmart"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/top offers.html">Top offers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/men.html">Men</a></li>
+              <li><a class="dropdown-item" href="/women.html">Women </a></li>
+              <li><a class="dropdown-item" href="#">Kids </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/bags.html">Bags</a></li>
+              <li><a class="dropdown-item" href="/electronics.html">Electronics</a></li>
+              <li><a class="dropdown-item" href="/shoes.html">Shoes</a></li>
+              <li><a class="dropdown-item" href="/furniture.html">Furniture</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/more products.html">More Products</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/contact us.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <div class="button btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Sign up</div>
+        <div class="button btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">login</div>
+      </div>
+    </div>
+  </nav>
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Sign up to Blinkmart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="inputName" class="form-label">Username</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">login to Blinkmart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username/email address</label>
+              <input type="text" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Please use a real name & email address</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-4">
+    <!-- product-1 are started here -->
+    <div
+      class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7">
+            <h4 class="featurette-heading">HIMALAYA HAPPY BABY GIFT BASKET (7 IN 1) (White)
+              <br><span class="text-muted">₹480 &nbsp; <h6><del> ₹749</del>&nbsp;&nbsp;<span style="color: green;">35%
+                    off</span></h6>
+              </span>
+            </h4>
+            <div class="btn btn-warning">Buy Now</div>
+            <p class="lead"><strong style="font-size: 30px;"> Available offers </strong>
+            <ul>
+              <li><b>Special Price</b>&nbsp;&nbsp;Get extra 5% off (price inclusive of discount) <a href="#">T&C</a>
+              </li>
+              <li><b>Bank Offer</b> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card <a href="#">T&C</a>
+              </li>
+              <li><b>Partner Offer</b>Sign up for Flipkart Pay Later and get Flipkart Gift Card worth
+                ₹100*<a href="#">Know More</a></li>
+              <li><b>Partner Offer</b>Order More, Win More: Chance to win an iPad and EGVs worth ₹5000 on
+                Flipkart
+                Pay Later transaction<a href="#">Know More</a></li>
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- Images are uploaded here -->
+            <img class="img-fluid"
+              src="https://rukminim2.flixcart.com/image/416/416/k6jnfrk0/baby-care-combo/y/v/g/baby-gift-pack-basket-7-baby-gift-pack-basket-himalaya-original-imafzze9cy9rjkdm.jpeg?q=70"
+              alt="glass">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product-2 are started here -->
+    <div
+      class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h4 class="featurette-heading">HIMALAYA Massage Oil (500 ml)
+              <br><span class="text-muted">₹224 &nbsp; <h6><del> 400</del>&nbsp;&nbsp;<span style="color: green;">44%
+                    off</span></h6>
+              </span>
+            </h4>
+            <div class="btn btn-warning">Buy Now</div>
+            <p class="lead"><strong style="font-size: 30px;"> Available offers </strong>
+            <ul>
+              <li><b>Partner Offer</b>&nbsp;&nbsp;Sign up for Flipkart Pay Later and get Flipkart Gift
+                Card worth ₹100* <a href="#">Know More</a></li>
+              <li><b>Partner Offer</b> Order More, Win More: Chance to win an iPad and EGVs worth ₹5000 on
+                Flipkart Pay Later transaction <a href="#">Know More</a></li>
+              <li><b>Combo Offer</b>Buy 2 items save 5%;Buy 3 or more save 10%<a href="#">T&C</a></li>
+              <li><b>Bank Offer</b>10% off on Federal Bank Cards, up to ₹1500. On orders of ₹5000 and
+                above<a href="#">T&C</a></li>
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- Images are uploaded here -->
+            <img class="img-fluid"
+              src="https://rukminim2.flixcart.com/image/416/416/k6jnfrk0/massage-oil/z/e/z/100-baby-massage-oil-8901138511739-himalaya-original-imafzzg6qf2nnhkz.jpeg?q=70"
+              alt="glass">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product-3 are started here -->
+    <div
+      class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7">
+            <h4 class="featurette-heading">Cuddles - Super Pants Pant Style Diaper - L (62 Pieces)
+              <br><span class="text-muted">₹449 &nbsp; <h6><del> ₹999</del>&nbsp;&nbsp;<span style="color: green;">55%
+                    off</span></h6>
+              </span>
+            </h4>
+            <div class="btn btn-warning">Buy Now</div>
+            <p class="lead"><strong style="font-size: 30px;"> Available offers </strong>
+            <ul>
+              <li><b>Special Price</b>&nbsp;&nbsp;Get extra 5% off (price inclusive of discount) <a href="#">T&C</a>
+              </li>
+              <li><b>Bank Offer</b> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card <a href="#">T&C</a>
+              </li>
+              <li><b>Partner Offer</b>Sign up for Flipkart Pay Later and get Flipkart Gift Card worth
+                ₹100*<a href="#">Know More</a></li>
+              <li><b>Partner Offer</b>Order More, Win More: Chance to win an iPad and EGVs worth ₹5000 on
+                Flipkart
+                Pay Later transaction<a href="#">Know More</a></li>
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- Images are uploaded here -->
+            <img class="img-fluid"
+              src="https://rukminim2.flixcart.com/image/416/416/ku2zjww0/diaper/d/a/g/pant-style-diaper-l-cuddles-super-pants-original-imag7agye4np6xde.jpeg?q=70"
+              alt="glass">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product-4 are started here -->
+    <div
+      class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h4 class="featurette-heading">Huggies Wonder Pants with Bubble Bed Technology Diapers - XS (48 Pieces)
+              <br><span class="text-muted">₹252 &nbsp; <h6><del> 420</del>&nbsp;&nbsp;<span style="color: green;">40%
+                    off</span></h6>
+              </span>
+            </h4>
+            <div class="btn btn-warning">Buy Now</div>
+            <p class="lead"><strong style="font-size: 30px;"> Available offers </strong>
+            <ul>
+              <li><b>Partner Offer</b>&nbsp;&nbsp;Sign up for Flipkart Pay Later and get Flipkart Gift
+                Card worth ₹100* <a href="#">Know More</a></li>
+              <li><b>Partner Offer</b> Order More, Win More: Chance to win an iPad and EGVs worth ₹5000 on
+                Flipkart Pay Later transaction <a href="#">Know More</a></li>
+              <li><b>Combo Offer</b>Buy 2 items save 5%;Buy 3 or more save 10%<a href="#">T&C</a></li>
+              <li><b>Bank Offer</b>10% off on Federal Bank Cards, up to ₹1500. On orders of ₹5000 and
+                above<a href="#">T&C</a></li>
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- Images are uploaded here -->
+            <img class="img-fluid"
+              src="https://rukminim2.flixcart.com/image/416/416/k2rwlu80/diaper/n/x/d/wonder-pants-diaper-xs-48-huggies-original-imafket5hxrthnzg.jpeg?q=70"
+              alt="glass">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product-5 are started here -->
+    <div
+      class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7">
+            <h4 class="featurette-heading">Pampers Diaper Pants - New Born (66 Pieces)
+              <br><span class="text-muted">₹499 &nbsp; <h6><del> ₹699</del>&nbsp;&nbsp;<span style="color: green;">28%
+                    off</span></h6>
+              </span>
+            </h4>
+            <div class="btn btn-warning">Buy Now</div>
+            <p class="lead"><strong style="font-size: 30px;"> Available offers </strong>
+            <ul>
+              <li><b>Special Price</b>&nbsp;&nbsp;Get extra 5% off (price inclusive of discount) <a href="#">T&C</a>
+              </li>
+              <li><b>Bank Offer</b> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card <a href="#">T&C</a>
+              </li>
+              <li><b>Partner Offer</b>Sign up for Flipkart Pay Later and get Flipkart Gift Card worth
+                ₹100*<a href="#">Know More</a></li>
+              <li><b>Partner Offer</b>Order More, Win More: Chance to win an iPad and EGVs worth ₹5000 on
+                Flipkart
+                Pay Later transaction<a href="#">Know More</a></li>
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- Images are uploaded here -->
+            <img class="img-fluid"
+              src="https://rukminim2.flixcart.com/image/416/416/kg9qbgw0/diaper/h/2/h/diaper-pants-lotion-with-aloe-vera-new-born-66-pampers-original-imafwjmh7gvune6w.jpeg?q=70"
+              alt="glass">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product-6 are started here -->
+    <div
+      class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+      <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h4 class="featurette-heading">HIMALAYA Baby Lotion 400 ml (400 ml)
+              <br><span class="text-muted">₹151 &nbsp; <h6><del>₹290</del>&nbsp;&nbsp;<span style="color: green;">47%
+                    off</span></h6>
+              </span>
+            </h4>
+            <div class="btn btn-warning">Buy Now</div>
+            <p class="lead"><strong style="font-size: 30px;"> Available offers </strong>
+            <ul>
+              <li><b>Special Price</b>&nbsp;&nbsp;Get extra 5% off (price inclusive of discount) <a href="#">T&C</a>
+              </li>
+              <li><b>Bank Offer</b> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card <a href="#">T&C</a>
+              </li>
+              <li><b>Partner Offer</b>Sign up for Flipkart Pay Later and get Flipkart Gift Card worth
+                ₹100*<a href="#">Know More</a></li>
+              <li><b>Partner Offer</b>Order More, Win More: Chance to win an iPad and EGVs worth ₹5000 on
+                Flipkart
+                Pay Later transaction<a href="#">Know More</a></li>
+              </p>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- Images are uploaded here -->
+            <img class="img-fluid"
+              src="https://rukminim2.flixcart.com/image/416/416/k6jnfrk0/moisturizer-cream/p/h/j/400-baby-lotion-400-ml-himalaya-lotion-original-imafzzeagzenfwam.jpeg?q=70"
+              alt="glass">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <center>
+    <div class="btn btn-warning">View all products</div>
+  </center>
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img width="120" height="70" src="/logo.jpeg" alt="logo">
+        <small class="d-block mb-3 text-muted">© 2022–2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#">Another one</a></li>
+          <li><a class="link-secondary" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Resource name</a></li>
+          <li><a class="link-secondary" href="#">Resource</a></li>
+          <li><a class="link-secondary" href="#">Another resource</a></li>
+          <li><a class="link-secondary" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Education</a></li>
+          <li><a class="link-secondary" href="#">Government</a></li>
+          <li><a class="link-secondary" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Team</a></li>
+          <li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

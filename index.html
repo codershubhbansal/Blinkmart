@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Project</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.jpeg">
+</head>
+
+<body style="background-color: antiquewhite;">
+  <div class="arrow-btn">
+    <a href="#"><span class="far fa-angle-up">^</span></a>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div id="nav-logo">
+        <aclass="navbar-brand" href="#"><img width="120" height="70" src="/logo.jpeg" alt="Blinkmart"
+            title="Blinkmart"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/top offers.html">Top offers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/men.html">Men</a></li>
+              <li><a class="dropdown-item" href="/women.html">Women </a></li>
+              <li><a class="dropdown-item" href="/kids.html">Kids </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/bags.html">Bags</a></li>
+              <li><a class="dropdown-item" href="/electronics.html">Electronics</a></li>
+              <li><a class="dropdown-item" href="/shoes.html">Shoes</a></li>
+              <li><a class="dropdown-item" href="/furniture.html">Furniture</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/more products.html">More Products</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/contact us.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <div class="button btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Sign up</div>
+        <div class="button btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">login</div>
+      </div>
+    </div>
+  </nav>
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Sign up to Blinkmart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="inputName" class="form-label">Username</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">login to Blinkmart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username/email address</label>
+              <input type="text" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Please use a real name & email address</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- images on slider 1-->
+        <img src="https://m.media-amazon.com/images/I/618B1HnAxLL._SX3000_.jpg" class="d-block w-100" alt="image"
+          height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="color:black">Shop Now</h2>
+          <p style="color:black">Top offers on Bestselling Products</p>
+          <div class="btn btn-warning">Buy Now</div>
+          <div class="btn btn-danger">Add to cart</div>
+          <div class="btn btn-primary">View all</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- images on slider 2-->
+        <img src="https://m.media-amazon.com/images/I/81GgBv8zqbL._SX3000_.jpg" class="d-block w-100" alt="image"
+          height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="color:black">Shop Now</h2>
+          <p style="color:black">Top offers on Bestselling Products</p>
+          <div class="btn btn-warning">Buy Now</div>
+          <div class="btn btn-danger">Add to cart</div>
+          <div class="btn btn-primary">View all</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- images on slider 3-->
+        <img src="https://m.media-amazon.com/images/I/61JJzlrOX5L._SX3000_.jpg" class="d-block w-100" alt="image"
+          height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="color:whitesmoke">Shop Now</h2>
+          <p style="color:whitesmoke">Top offers on Bestselling Products</p>
+          <div class="btn btn-warning">Buy Now</div>
+          <div class="btn btn-danger">Add to cart</div>
+          <div class="btn btn-primary">View all</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- images on slider 4 -->
+        <img src="https://m.media-amazon.com/images/I/61pxhbXv8tL._SX3000_.jpg" class="d-block w-100" alt="image"
+          height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="color:black">Shop Now</h2>
+          <p style="color:black">Top offers on Bestselling Products</p>
+          <div class="btn btn-warning">Buy Now</div>
+          <div class="btn btn-danger">Add to cart</div>
+          <div class="btn btn-primary">View all</div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+            <strong class="d-inline-block mb-2 text-primary">Travel now</strong>
+            <h3 class="mb-0">Book your travel tickets</h3>
+            <div class="mb-1 text-muted">Mar 18</div>
+            <p class="card-text mb-auto">All travel facilities are also available around the world.</p>
+            <a href="#">Explore more</a>
+          </div>
+          <div class="col-auto d-none d-lg-block placeholder-wave">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://images.indianexpress.com/2020/05/indigo.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+            <strong class="d-inline-block mb-2 text-success">Own Bussiness</strong>
+            <h3 class="mb-0">Become a Reseller</h3>
+            <div class="mb-1 text-muted">Mar 18</div>
+            <p class="mb-auto">Start your Online Business with Zero Investment.</p>
+            <a href="#" class="stretched-link">Explore now</a>
+          </div>
+          <div class="col-auto d-none d-lg-block placeholder-wave">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=675%2Cmetadata=none%2Conerror=redirect%2Cq=85%2Cwidth=1200/wp-content/uploads/own-business-day.jpg"
+              alt="Image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+            <strong class="d-inline-block mb-2 text-primary">Our Home</strong>
+            <h3 class="mb-0">Revamp your home in style</h3>
+            <div class="mb-1 text-muted">Mar 18</div>
+            <p class="card-text mb-auto">Home is where you create joy & find comfort.</p>
+            <a href="#">Explore
+              all</a>
+          </div>
+          <div class="col-auto d-none d-lg-block placeholder-wave">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_1_Low._SY116_CB670263840_.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static placeholder-wave">
+            <strong class="d-inline-block mb-2 text-success">Summer Sale</strong>
+            <h3 class="mb-0">Top trending this summer</h3>
+            <div class="mb-1 text-muted">Mar 18</div>
+            <p class="mb-auto">Summer Appliances Fest upto 40% off ACs, Refrigerators & more.</p>
+            <a href="#" class="stretched-link">See now</a>
+          </div>
+          <div class="col-auto d-none d-lg-block placeholder-wave">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="http://bsmedia.business-standard.com/_media/bs/img/article/2013-05/24/full/1369412627-2897.jpg"
+              alt="Image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img width="120" height="70" src="/logo.jpeg" alt="logo">
+        <small class="d-block mb-3 text-muted">© 2022–2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#">Another one</a></li>
+          <li><a class="link-secondary" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Resource name</a></li>
+          <li><a class="link-secondary" href="#">Resource</a></li>
+          <li><a class="link-secondary" href="#">Another resource</a></li>
+          <li><a class="link-secondary" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Education</a></li>
+          <li><a class="link-secondary" href="#">Government</a></li>
+          <li><a class="link-secondary" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Team</a></li>
+          <li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
